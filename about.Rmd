@@ -1,0 +1,13 @@
+---
+title: "About this website"
+output: html_document
+date: "2025-10-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This website was coded by Amanda Sy using RMarkdown to do all the hard work
+
+Go back to the [homepage](index.html)
