@@ -29,7 +29,7 @@ instacart =
 
 set.seed(123)
 instacart_sample <- instacart |> 
-  sample_n(5000)
+  sample_n(9000)
 ```
 
 Column {data-width=650}
