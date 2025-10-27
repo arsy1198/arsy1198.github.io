@@ -23,7 +23,7 @@ data("instacart")
 instacart =
   instacart  |> 
   select(
-    order_dow, order_hour_of_day, product_name, aisle, department
+    order_dow, order_hour_of_day, product_name, aisle, department, days_since_prior_order
   ) |> 
   add_count(aisle, name = "aisle_count") |> 
   filter(aisle_count > 10000)
@@ -67,7 +67,7 @@ instacart_sample |>
 ```{r}
 instacart_sample |>
   plot_ly( 
-    x = ~department, y = ~aisle, color = ~department,
+    x = ~order_hour_of_day, y = ~days_since_prior_order, color = ~department,
     type = "scatter", mode = "markers", colors = "viridis"
   )
 ```
