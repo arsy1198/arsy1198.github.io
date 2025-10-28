@@ -67,8 +67,8 @@ instacart_sample |>
 ```{r}
 instacart_sample |>
   plot_ly( 
-    x = ~order_hour_of_day, y = ~days_since_prior_order, color = ~department,
-    type = "scatter", mode = "markers", colors = "viridis"
+    x = ~aisle, y = ~order_hour_of_day, color = ~department,
+    type = "violin", colors = "viridis"
   )
 ```
 
